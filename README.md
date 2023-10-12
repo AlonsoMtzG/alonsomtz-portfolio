@@ -1,2 +1,0 @@
-# alonsomtz-portfolio
-My portfolio
