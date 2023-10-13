@@ -3,7 +3,8 @@ import Image from 'next/image';
 import { TechsCircle } from './TechsCircle';
 
 export const Content = ({ project }) => {
-  const { name, techs, description, imagesSrc } = project;
+  const { name, techs, description, src } = project;
+
   return (
     <>
       <div className="flex items-center gap-4">
@@ -17,18 +18,15 @@ export const Content = ({ project }) => {
         ))}
       </div>
       <p className="font-light">{description}</p>
-      <div>
-        {imagesSrc.map((val, idx) => (
-          <Image
-            priority={true}
-            key={val + idx}
-            width={1920}
-            height={1440}
-            className="w-full"
-            src={val}
-            alt={name}
-          />
-        ))}
+      <div className="flex flex-col gap-5">
+        <Image
+          priority={true}
+          width={1920}
+          height={1440}
+          className="w-full"
+          src={src}
+          alt={name}
+        />
       </div>
     </>
   );
