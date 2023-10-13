@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Westgate";
+  font-weight: 300;
+  src: url("./fonts/Westgate/Westgate-Light.otf");
+}
+
+@font-face {
+  font-family: "Westgate";
+  font-weight: 400;
+  src: url("./fonts/Westgate/Westgate-Regular.otf");
+}
+
+@font-face {
+  font-family: "Westgate";
+  font-weight: 600;
+  src: url("./fonts/Westgate/Westgate-Semibold.otf");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
