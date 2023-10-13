@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { About } from "../components/About";
 import { Divider } from "../components/Divider";
 import { Header } from "../components/Header";
@@ -11,6 +12,8 @@ export default function Home() {
       <About />
       <Divider />
       <Projects />
+      <Divider />
+      <Footer />
     </main>
   );
 }
