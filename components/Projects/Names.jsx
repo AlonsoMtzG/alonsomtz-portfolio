@@ -1,4 +1,3 @@
-import { colorVariants, projects } from '@/constants';
 import React from 'react';
 
 const ProjectName = ({ number, name }) => {
@@ -35,7 +34,13 @@ const Unselected = ({ number, name, textClass }) => {
   );
 };
 
-export const Names = ({ projects, selectedProject, setSelectedProject }) => {
+export const Names = ({
+  projects,
+  selectedProject,
+  setSelectedProject,
+  textColorSelected,
+  textColorUnSelected,
+}) => {
   return (
     <>
       {projects.map(({ name }, idx) => (
@@ -48,17 +53,13 @@ export const Names = ({ projects, selectedProject, setSelectedProject }) => {
               <Selected
                 number={`0${idx + 1}`}
                 name={name}
-                textClass={
-                  colorVariants[projects[selectedProject].colorClass].selected
-                }
+                textClass={textColorSelected}
               />
             ) : (
               <Unselected
                 number={`0${idx + 1}`}
                 name={name}
-                textClass={
-                  colorVariants[projects[selectedProject].colorClass].unselected
-                }
+                textClass={textColorUnSelected}
               />
             )}
           </button>

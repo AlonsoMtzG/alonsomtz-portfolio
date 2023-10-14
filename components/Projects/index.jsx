@@ -1,15 +1,19 @@
 'use client';
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { projects } from '@/constants';
 
 import { Names } from './Names';
 import { Content } from './Content';
-import { ProjectThemeContext } from '@/context/Theme';
+import { useThemeContext } from '@/hooks/useThemeContext';
 
 export const Projects = () => {
-  const { selectedProject, setSelectedProject } =
-    useContext(ProjectThemeContext);
+  const {
+    selectedProject,
+    setSelectedProject,
+    textColorSelected,
+    textColorUnSelected,
+  } = useThemeContext();
 
   return (
     <div className="py-10 px-10 flex">
@@ -18,6 +22,8 @@ export const Projects = () => {
           projects={projects}
           selectedProject={selectedProject}
           setSelectedProject={setSelectedProject}
+          textColorSelected={textColorSelected}
+          textColorUnSelected={textColorUnSelected}
         />
       </div>
       <div className="flex flex-1 flex-col gap-3">
