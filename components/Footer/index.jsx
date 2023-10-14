@@ -14,7 +14,11 @@ export const Footer = () => {
   return (
     <div className="px-10 py-14 flex justify-between">
       <div className="flex gap-1">
-        <span className={`font-bold ${textColorSelected}`}>Email me:</span>
+        <span
+          className={`font-bold ${textColorSelected} transition-all duration-300`}
+        >
+          Email me:
+        </span>
         <Link href="mailto: luisalonsomtzg@gmail.com" className="font-light">
           luisalonsomtzg@gmail.com
         </Link>

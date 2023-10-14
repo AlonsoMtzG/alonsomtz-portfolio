@@ -13,7 +13,9 @@ export const About = () => {
       <div className="px-10">
         <p className="font-light">
           Hi I'm Alonso Martínez, passionate about crafting{' '}
-          <span className={`font-semibold ${textColorSelected}`}>
+          <span
+            className={`font-semibold ${textColorSelected} transition-all duration-300`}
+          >
             memorable user experiences.
           </span>
         </p>
