@@ -4,30 +4,37 @@ export const colorVariants = {
   pixelu: {
     selected: "text-indigo-600",
     unselected: "group-hover:text-indigo-600",
+    background: "bg-indigo-600",
   },
   enigma: {
     selected: "text-rose-600",
     unselected: "group-hover:text-rose-600",
+    background: "bg-rose-600",
   },
   studya: {
     selected: "text-sky-900",
     unselected: "group-hover:text-sky-900",
+    background: "bg-sky-900",
   },
   hitec: {
     selected: "text-sky-600",
     unselected: "group-hover:text-sky-600",
+    background: "bg-sky-600",
   },
   bamx: {
     selected: "text-rose-600",
     unselected: "group-hover:text-rose-600",
+    background: "bg-rose-600",
   },
   feedback: {
     selected: "text-violet-500",
     unselected: "group-hover:text-violet-500",
+    background: "bg-violet-500",
   },
   lert: {
     selected: "text-blue-600",
     unselected: "group-hover:text-blue-600",
+    background: "bg-blue-600",
   },
 };
 

@@ -11,11 +11,14 @@ export const useThemeContext = () => {
     colorVariants[projects[selectedProject].colorClass].selected;
   const textColorUnSelected =
     colorVariants[projects[selectedProject].colorClass].unselected;
+  const bgColor =
+    colorVariants[projects[selectedProject].colorClass].background;
 
   return {
     selectedProject,
     setSelectedProject,
     textColorSelected,
     textColorUnSelected,
+    bgColor,
   };
 };
