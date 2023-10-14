@@ -6,7 +6,7 @@ export const Header = () => {
   return (
     <div className="flex px-10 py-10 items-center justify-between">
       <div />
-      <span className="font-westgate text-3xl">Alonso Mtz</span>
+      <span className="font-westgate font-light text-3xl">Alonso Mtz</span>
       <LangButton />
     </div>
   );

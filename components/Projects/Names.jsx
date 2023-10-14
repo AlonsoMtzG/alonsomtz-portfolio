@@ -46,7 +46,7 @@ export const Names = ({
       {projects.map(({ name }, idx) => (
         <div key={name}>
           <button
-            className="group flex font-westgate text-7xl gap-2 w-fit"
+            className="group flex font-westgate font-light text-7xl gap-2 w-fit"
             onClick={() => setSelectedProject(idx)}
           >
             {selectedProject === idx ? (
