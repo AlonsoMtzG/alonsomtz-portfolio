@@ -4,7 +4,7 @@ export const MarqueeCircle = () => {
   return (
     <div className="relative flex w-4 mb-5">
       <svg
-        className="absolute fill-black dark:fill-white transition-all duration-500"
+        className="absolute fill-white transition-all duration-500"
         version="1.1"
         baseProfile="full"
         width="10"
