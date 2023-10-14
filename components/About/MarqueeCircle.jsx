@@ -2,7 +2,7 @@ import React from 'react';
 
 export const MarqueeCircle = () => {
   return (
-    <div className="relative flex w-4 mb-5">
+    <div className="relative flex w-4">
       <svg
         className="absolute fill-white transition-all duration-500"
         version="1.1"
