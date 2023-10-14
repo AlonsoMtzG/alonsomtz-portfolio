@@ -34,7 +34,7 @@ export const colorVariants = {
 export const projects = [
   {
     name: "Pixelu Studio",
-    techs: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    techs: ["Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Design"],
     description:
       "Landing page of my digital design & software development studio.",
     src: `${projectsPath}/pixelu.gif`,
@@ -42,43 +42,46 @@ export const projects = [
   },
   {
     name: "Enigma",
-    techs: ["Next.js", "Tailwind CSS", "Firebase", "Stripe"],
+    techs: ["Next.js", "Tailwind CSS", "Firebase", "Stripe", "UI/UX Design"],
     description: "E-commerce platform to purchase event tickets.",
     src: `${projectsPath}/enigma.gif`,
     colorClass: "enigma",
   },
   {
     name: "Studya",
-    techs: ["Next.js"],
-    description: "",
+    techs: ["Figma", "UI/UX Design"],
+    description: "Online platform to find and compare academic options.",
     src: `${projectsPath}/studya.gif`,
     colorClass: "studya",
   },
   {
     name: "HiTec",
-    techs: ["Next.js"],
-    description: "",
+    techs: ["React.js", "Firebase", "UI/UX Design"],
+    description:
+      "Official site of the event for new students of Tec de Monterrey.",
     src: `${projectsPath}/hiTec.gif`,
     colorClass: "hitec",
   },
   {
     name: "BAMX",
-    techs: ["Next.js"],
-    description: "",
+    techs: ["Swift", "Firebase", "UI/UX Design"],
+    description:
+      "iOS Mobile App to schedule and make donations with rewards system.",
     src: `${projectsPath}/bamx.gif`,
     colorClass: "bamx",
   },
   {
     name: "Feedback Channel",
-    techs: ["Next.js"],
-    description: "",
+    techs: ["React.js", "Node.js", "Mongo DB", "Express", "UI/UX Design"],
+    description:
+      "Web App to track complaints and suggestions within the company.",
     src: `${projectsPath}/feedback.gif`,
     colorClass: "feedback",
   },
   {
     name: "Lert",
-    techs: ["Next.js"],
-    description: "",
+    techs: ["React.js", "Redux", "Material UI", "Flask", "UI/UX Design"],
+    description: "Labor Expenses Recovery Tool (Web App).",
     src: `${projectsPath}/lert.gif`,
     colorClass: "lert",
   },
