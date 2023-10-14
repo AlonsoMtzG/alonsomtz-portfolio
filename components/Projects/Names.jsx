@@ -13,7 +13,7 @@ const Selected = ({ number, name, textClass }) => {
   return (
     <ProjectName
       number={{ text: number, class: textClass }}
-      name={{ text: name, class: 'text-black dark:text-white' }}
+      name={{ text: name, class: 'text-white' }}
     />
   );
 };
@@ -23,12 +23,12 @@ const Unselected = ({ number, name, textClass }) => {
     <ProjectName
       number={{
         text: number,
-        class: `text-gray-300 dark:text-gray-600 ${textClass} group-hover:opacity-60 transition-all duration-200`,
+        class: `text-gray-600 ${textClass} group-hover:opacity-60 transition-all duration-200`,
       }}
       name={{
         text: name,
         class:
-          'text-gray-300 dark:text-gray-600 dark:group-hover:text-gray-400 group-hover:text-black transition-all duration-200',
+          'text-gray-600 group-hover:text-gray-400 transition-all duration-200',
       }}
     />
   );
