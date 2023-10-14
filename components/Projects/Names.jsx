@@ -1,3 +1,4 @@
+import { colorVariants, projects } from '@/constants';
 import React from 'react';
 
 const ProjectName = ({ number, name }) => {
@@ -9,26 +10,26 @@ const ProjectName = ({ number, name }) => {
   );
 };
 
-const Selected = ({ number, name }) => {
+const Selected = ({ number, name, textClass }) => {
   return (
     <ProjectName
-      number={{ text: number, class: 'text-indigo-600' }}
+      number={{ text: number, class: textClass }}
       name={{ text: name, class: 'text-black dark:text-white' }}
     />
   );
 };
 
-const Unselected = ({ number, name }) => {
+const Unselected = ({ number, name, textClass }) => {
   return (
     <ProjectName
       number={{
         text: number,
-        class: 'text-gray-300 dark:text-gray-600 group-hover:text-indigo-400',
+        class: `text-gray-300 dark:text-gray-600 ${textClass} group-hover:opacity-60 transition-all duration-200`,
       }}
       name={{
         text: name,
         class:
-          'text-gray-300 dark:text-gray-600 dark:group-hover:text-gray-400 group-hover:text-black',
+          'text-gray-300 dark:text-gray-600 dark:group-hover:text-gray-400 group-hover:text-black transition-all duration-200',
       }}
     />
   );
@@ -44,9 +45,21 @@ export const Names = ({ projects, selectedProject, setSelectedProject }) => {
             onClick={() => setSelectedProject(idx)}
           >
             {selectedProject === idx ? (
-              <Selected number={`0${idx + 1}`} name={name} />
+              <Selected
+                number={`0${idx + 1}`}
+                name={name}
+                textClass={
+                  colorVariants[projects[selectedProject].colorClass].selected
+                }
+              />
             ) : (
-              <Unselected number={`0${idx + 1}`} name={name} />
+              <Unselected
+                number={`0${idx + 1}`}
+                name={name}
+                textClass={
+                  colorVariants[projects[selectedProject].colorClass].unselected
+                }
+              />
             )}
           </button>
         </div>

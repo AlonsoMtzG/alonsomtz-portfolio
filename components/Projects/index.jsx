@@ -1,13 +1,15 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 
 import { projects } from '@/constants';
 
 import { Names } from './Names';
 import { Content } from './Content';
+import { ProjectThemeContext } from '@/context/Theme';
 
 export const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(0);
+  const { selectedProject, setSelectedProject } =
+    useContext(ProjectThemeContext);
 
   return (
     <div className="py-10 px-10 flex">
