@@ -21,18 +21,21 @@ export const Footer = () => {
       </div>
       <div className="flex gap-2">
         <Link
+          target="_blank"
           href="https://twitter.com/alonsomdev"
           className="opacity-70 hover:opacity-100"
         >
           <TwitterIcon size={22} />
         </Link>
         <Link
+          target="_blank"
           href="https://www.linkedin.com/in/alonsomtzgar/"
           className="opacity-70 hover:opacity-100"
         >
           <LinkedinIcon size={22} />
         </Link>
         <Link
+          target="_blank"
           href="https://github.com/AlonsoMtzG"
           className="opacity-70 hover:opacity-100"
         >
