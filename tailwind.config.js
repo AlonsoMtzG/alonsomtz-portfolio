@@ -9,7 +9,6 @@ module.exports = {
   theme: {
     fontFamily: {
       satoshi: ["Satoshi", "sans-serif"],
-      westgate: ["Westgate", "cursive"],
     },
     extend: {
       backgroundImage: {

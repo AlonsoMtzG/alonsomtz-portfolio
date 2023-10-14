@@ -3,7 +3,9 @@ import React from 'react';
 const ProjectName = ({ number, name }) => {
   return (
     <>
-      <span className={number.class}>{number.text}</span>
+      <span className={`${number.class} w-12 justify-start text-left`}>
+        {number.text}
+      </span>
       <span className={name.class}>{name.text}</span>
     </>
   );
@@ -46,7 +48,7 @@ export const Names = ({
       {projects.map(({ name }, idx) => (
         <div key={name}>
           <button
-            className="group flex font-westgate font-light text-7xl gap-2 w-fit"
+            className="group flex font-satoshi font-thin text-4xl gap-2 w-fit"
             onClick={() => setSelectedProject(idx)}
           >
             {selectedProject === idx ? (

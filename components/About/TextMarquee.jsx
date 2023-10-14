@@ -9,7 +9,7 @@ export const TextMarquee = () => {
     <Marquee className="items-center" autoFill={true} direction={'left'}>
       {titles.map((val, idx) => (
         <div key={idx} className="flex h-full items-center">
-          <span className="mx-10 text-8xl font-westgate font-light">{val}</span>
+          <span className="mx-10 text-5xl font-satoshi font-thin">{val}</span>
           <MarqueeCircle />
         </div>
       ))}
