@@ -5,9 +5,9 @@ import { Toggle } from '../Toggle';
 export const Header = () => {
   return (
     <div className="flex px-10 py-10 items-center justify-between">
-      <LangButton />
+      <div />
       <span className="font-westgate text-3xl">Alonso Mtz</span>
-      <Toggle label={'Dark Mode'} />
+      <LangButton />
     </div>
   );
 };
