@@ -16,7 +16,7 @@ export const Projects = () => {
   } = useThemeContext();
 
   return (
-    <div className="py-10 px-10 flex">
+    <div className="py-14 px-10 flex">
       <div className="flex flex-[0.8] flex-col gap-3">
         <Names
           projects={projects}

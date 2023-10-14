@@ -4,7 +4,7 @@ import { TextMarquee } from './TextMarquee';
 
 export const About = () => {
   return (
-    <div className="py-10">
+    <div className="py-14">
       <TextMarquee />
     </div>
   );
