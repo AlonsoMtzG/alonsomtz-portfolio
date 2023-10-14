@@ -7,6 +7,16 @@ export const Content = ({ project }) => {
 
   return (
     <>
+      <div className="flex flex-col gap-5">
+        <Image
+          priority={true}
+          width={1920}
+          height={1440}
+          className="w-full"
+          src={src}
+          alt={name}
+        />
+      </div>
       <div className="flex items-center gap-4">
         {techs.map((val, idx) => (
           <div key={val + idx} className="flex items-center">
@@ -18,16 +28,6 @@ export const Content = ({ project }) => {
         ))}
       </div>
       <p className="font-light">{description}</p>
-      <div className="flex flex-col gap-5">
-        <Image
-          priority={true}
-          width={1920}
-          height={1440}
-          className="w-full"
-          src={src}
-          alt={name}
-        />
-      </div>
     </>
   );
 };
