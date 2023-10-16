@@ -10,6 +10,7 @@ export default function Home() {
       <Projects />
       <Divider />
       <Footer /> */}
+      {/* Delete when ending build  */}
       <div className="h-[100dvh] flex justify-center items-center bg-[url('/1.png')] bg-cover">
         <Building />
       </div>
