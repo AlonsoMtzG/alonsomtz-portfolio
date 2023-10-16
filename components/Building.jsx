@@ -17,7 +17,7 @@ export const Building = () => {
       <div className="text-center">
         <p className="font-satoshi text-gray-100">Currently updating my site</p>
         <p className="font-satoshi text-gray-100">
-          But thank you for your visit.
+          But thank u for your visit!
         </p>
       </div>
     </div>
