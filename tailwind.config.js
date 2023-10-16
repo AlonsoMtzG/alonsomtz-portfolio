@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontFamily: {
       satoshi: ["Satoshi", "sans-serif"],
+      bigShoulder: ["BigShoulder", "cursive"],
     },
     extend: {
       backgroundImage: {

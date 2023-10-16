@@ -7,6 +7,11 @@
   src: url("./fonts/Satoshi-Variable.ttf");
 }
 
+@font-face {
+  font-family: "BigShoulder";
+  src: url("./fonts/BigShouldersDisplay.ttf");
+}
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;

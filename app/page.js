@@ -1,19 +1,18 @@
-import { Footer } from "@/components/Footer";
-import { About } from "../components/About";
-import { Divider } from "../components/Divider";
-import { Header } from "../components/Header";
-import { Projects } from "../components/Projects";
+import { Building } from "@/components/Building";
 
 export default function Home() {
   return (
     <main className="font-satoshi">
-      <Header />
+      {/* <Header />
       <Divider />
       <About />
       <Divider />
       <Projects />
       <Divider />
-      <Footer />
+      <Footer /> */}
+      <div className="h-[100dvh] flex justify-center items-center bg-[url('/1.png')] bg-cover">
+        <Building />
+      </div>
     </main>
   );
 }
