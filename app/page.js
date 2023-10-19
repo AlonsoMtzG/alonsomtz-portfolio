@@ -7,7 +7,7 @@ import { Projects } from "@/components/Projects";
 
 export default function Home() {
   return (
-    <main className="font-satoshi">
+    <main className="font-satoshi px-14">
       <Header />
       <About />
       <Projects />
