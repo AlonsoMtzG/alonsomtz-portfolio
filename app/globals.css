@@ -3,13 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Satoshi";
-  src: url("./fonts/Satoshi-Variable.ttf");
-}
-
-@font-face {
-  font-family: "BigShoulder";
-  src: url("./fonts/BigShouldersDisplay.ttf");
+  font-family: "ClashDisplay";
+  src: url("./fonts/ClashDisplay-Variable.ttf");
 }
 
 :root {

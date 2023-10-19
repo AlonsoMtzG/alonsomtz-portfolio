@@ -8,8 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      satoshi: ["Satoshi", "sans-serif"],
-      bigShoulder: ["BigShoulder", "cursive"],
+      satoshi: ["ClashDisplay", "sans-serif"],
     },
     extend: {
       backgroundImage: {
