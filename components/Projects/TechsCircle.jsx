@@ -4,7 +4,7 @@ export const TechsCircle = () => {
   return (
     <div className="relative flex mb-1">
       <svg
-        className="absolute fill-gray-400 dark:fill-gray-600 transition-all duration-500"
+        className="absolute fill-gray-400 transition-all duration-500"
         version="1.1"
         baseProfile="full"
         width="5"
