@@ -18,7 +18,7 @@ export const Projects = () => {
   } = useThemeContext();
 
   return (
-    <div className="py-14 flex">
+    <div className="flex">
       <div className="flex flex-1 flex-col gap-3">
         <Image
           priority={true}
@@ -31,16 +31,16 @@ export const Projects = () => {
       </div>
       <div className="flex flex-1 flex-col gap-8">
         <div className="flex flex-col">
-          <span className="text-right text-4xl font-medium text-indigo-600">
+          <span className="text-right text-6xl font-medium text-indigo-600">
             01
           </span>
-          <span className="text-right text-4xl font-medium">Pixelu Studio</span>
+          <span className="text-right text-2xl font-medium">Pixelu Studio</span>
         </div>
         <div>
           <div className="flex items-center gap-4 justify-end">
             {projects[selectedProject].techs.map((val, idx) => (
               <div key={val + idx} className="flex items-center">
-                <span className="text-zinc-400 text-lg font-thin mr-2">
+                <span className="text-zinc-400 text-xl font-thin mr-2">
                   {val}
                 </span>
                 {idx < projects[selectedProject].techs.length - 1 && (
@@ -49,7 +49,7 @@ export const Projects = () => {
               </div>
             ))}
           </div>
-          <p className="text-right text-lg font-thin">
+          <p className="text-right text-xl font-thin">
             {projects[selectedProject].description}
           </p>
         </div>
