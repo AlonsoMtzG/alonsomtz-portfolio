@@ -9,7 +9,7 @@ import { useThemeContext } from '@/hooks/useThemeContext';
 import Image from 'next/image';
 import { TechsCircle } from './TechsCircle';
 
-export const Projects = () => {
+export const Projects = ({ section2Ref, div2Ref }) => {
   const {
     selectedProject,
     setSelectedProject,
@@ -18,7 +18,7 @@ export const Projects = () => {
   } = useThemeContext();
 
   return (
-    <div className="flex">
+    <div ref={section2Ref} className="flex">
       <div className="flex flex-1 flex-col gap-3">
         <Image
           priority={true}
@@ -34,7 +34,9 @@ export const Projects = () => {
           <span className="text-right text-6xl font-medium text-indigo-600">
             01
           </span>
-          <span className="text-right text-2xl font-medium">Pixelu Studio</span>
+          <span ref={div2Ref} className="text-right text-2xl font-medium">
+            Pixelu Studio
+          </span>
         </div>
         <div>
           <div className="flex items-center gap-4 justify-end">

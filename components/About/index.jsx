@@ -2,10 +2,10 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-export const About = () => {
+export const About = ({ section1Ref, div1Ref }) => {
   return (
-    <div className="h-[88.5dvh] flex items-center">
-      <div className="mb-12 gap-1 flex flex-col justify-center">
+    <div ref={section1Ref} className="h-[88.5dvh] flex items-center">
+      <div className="mb-12 gap-1 flex flex-col justify-center" ref={div1Ref}>
         <h1 className="font-medium text-6xl">Software Engineer</h1>
         <h3 className="font-thin text-zinc-400 text-2xl">
           Full Stack Development | UI/UX Design
