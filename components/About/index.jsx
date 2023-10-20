@@ -4,8 +4,11 @@ import Typewriter from 'typewriter-effect';
 
 export const About = ({ divRef }) => {
   return (
-    <section className="h-[88.5dvh] flex items-center">
-      <div className="mb-12 gap-1 flex flex-col justify-center" ref={divRef}>
+    <section className="h-[88.5dvh] flex items-center justify-center">
+      <div
+        className="mb-12 gap-1 flex-col w-full flex items-center justify-center"
+        ref={divRef}
+      >
         <h1 className="font-medium text-6xl">Software Engineer</h1>
         <h3 className="font-thin text-zinc-400 text-2xl">
           Full Stack Development | UI/UX Design
