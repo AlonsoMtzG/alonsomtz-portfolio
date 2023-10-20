@@ -87,6 +87,7 @@ export default function Home() {
             display: "flex",
             justifyContent: "center",
             transform: "rotate(90deg)",
+            zIndex: 1001,
           }}
         >
           <span className="text-white text-2xl tracking-widest">
@@ -99,6 +100,7 @@ export default function Home() {
             top: `${indicatorTop}vh`,
             left: isAnimating ? "0px" : "-35px",
             transition: "left 0.3s ease-in-out",
+            zIndex: 999,
           }}
         >
           <svg
