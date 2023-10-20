@@ -2,8 +2,6 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { useThemeContext } from '@/hooks/useThemeContext';
-
 import { TwitterIcon } from './TwitterIcon';
 import { LinkedinIcon } from './LinkedinIcon';
 import { GithubIcon } from './GithubIcon';
@@ -32,7 +30,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/alonsomtzgar/"
           className="opacity-70 hover:opacity-100"
         >
-          <LinkedinIcon size={22} />
+          <LinkedinIcon size={24} />
         </Link>
         <Link
           target="_blank"
