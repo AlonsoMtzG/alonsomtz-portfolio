@@ -9,11 +9,11 @@ export const About = ({ divRef }) => {
         className="mb-12 gap-1 flex-col w-full flex items-center justify-center"
         ref={divRef}
       >
-        <h1 className="font-medium text-6xl">Software Engineer</h1>
-        <h3 className="font-thin text-zinc-400 text-2xl">
+        <h1 className="font-medium text-5xl">Software Engineer</h1>
+        <h3 className="font-thin text-zinc-400 text-xl">
           Full Stack Development | UI/UX Design
         </h3>
-        <div className="font-thin flex gap-1 text-zinc-400 text-2xl">
+        <div className="font-thin flex gap-1 text-zinc-400 text-xl">
           passionate about{' '}
           <span className="font-medium transition-all duration-300">
             <Typewriter

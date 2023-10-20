@@ -15,8 +15,8 @@ export const Projects = ({ divRef }) => {
       <div className="flex-col items-center w-1/2">
         <div className="flex flex-1 flex-col gap-8 mb-10">
           <div className="flex flex-col text-center">
-            <span className="text-6xl font-medium text-indigo-600">01</span>
-            <span ref={divRef} className="text-2xl font-medium">
+            <span className="text-5xl font-medium text-indigo-600">01</span>
+            <span ref={divRef} className="text-xl font-medium">
               Pixelu Studio
             </span>
           </div>
@@ -24,7 +24,7 @@ export const Projects = ({ divRef }) => {
             <div className="flex items-center gap-4 justify-center">
               {projects[selectedProject].techs.map((val, idx) => (
                 <div key={val + idx} className="flex items-center">
-                  <span className="text-zinc-400 text-xl font-thin mr-2">
+                  <span className="text-zinc-400 text-lg font-thin mr-2">
                     {val}
                   </span>
                   {idx < projects[selectedProject].techs.length - 1 && (
@@ -33,7 +33,7 @@ export const Projects = ({ divRef }) => {
                 </div>
               ))}
             </div>
-            <p className="text-xl font-thin text-center">
+            <p className="text-lg font-thin text-center">
               {projects[selectedProject].description}
             </p>
           </div>
