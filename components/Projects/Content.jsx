@@ -12,17 +12,17 @@ export const Content = ({ idx, name, techs, description, src, textColor }) => {
         <span className="text-xl font-medium">{name}</span>
       </div>
       <div>
-        <div className="flex items-center gap-4 justify-center">
+        <div className="flex items-center gap-3 md:gap-4 justify-center flex-wrap gap-y-1">
           {techs.map((val, idx) => (
             <div key={val + idx} className="flex items-center">
-              <span className="text-zinc-400 text-lg font-thin mr-2">
+              <span className="text-zinc-400 text-sm md:text-base font-thin mr-2">
                 {val}
               </span>
               {idx < techs.length - 1 && <TechsCircle />}
             </div>
           ))}
         </div>
-        <p className="text-lg font-thin text-center">{description}</p>
+        <p className="md:text-lg font-thin text-center">{description}</p>
       </div>
       <Image
         src={src}
