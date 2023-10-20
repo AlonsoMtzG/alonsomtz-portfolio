@@ -17,3 +17,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-start-rgb));
 }
+
+.swiper-pagination-bullet {
+  background-color: #a1a1aa !important;
+}

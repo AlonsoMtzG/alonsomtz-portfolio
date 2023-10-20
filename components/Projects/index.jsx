@@ -1,53 +1,47 @@
 'use client';
 import React from 'react';
-import Image from 'next/image';
+// import Swiper core and required modules
+import { Pagination, Keyboard } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import { projects } from '@/constants';
-import { useThemeContext } from '@/hooks/useThemeContext';
+import { Content } from './Content';
+import { colorVariants, projects } from '@/constants';
 
-import { TechsCircle } from './TechsCircle';
-
-export const Projects = ({ divRef }) => {
-  const { selectedProject } = useThemeContext();
-
+export const Projects = () => {
   return (
-    <section className="flex justify-center py-24">
-      <div className="flex-col items-center w-1/2">
-        <div className="flex flex-1 flex-col gap-8 mb-10">
-          <div className="flex flex-col text-center">
-            <span className="text-5xl font-medium text-indigo-600">01</span>
-            <span ref={divRef} className="text-xl font-medium">
-              Pixelu Studio
-            </span>
-          </div>
-          <div>
-            <div className="flex items-center gap-4 justify-center">
-              {projects[selectedProject].techs.map((val, idx) => (
-                <div key={val + idx} className="flex items-center">
-                  <span className="text-zinc-400 text-lg font-thin mr-2">
-                    {val}
-                  </span>
-                  {idx < projects[selectedProject].techs.length - 1 && (
-                    <TechsCircle />
-                  )}
-                </div>
-              ))}
-            </div>
-            <p className="text-lg font-thin text-center">
-              {projects[selectedProject].description}
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-1">
-          <Image
-            priority={true}
-            width={1920}
-            height={1440}
-            className="w-full"
-            src={projects[selectedProject].src}
-            alt={projects[selectedProject].name}
-          />
-        </div>
+    <section className="flex justify-center items-center">
+      <div className="w-[80vw] md:w-1/2">
+        <Swiper
+          modules={[Pagination, Keyboard]}
+          keyboard={{
+            enabled: true,
+          }}
+          spaceBetween={30}
+          slidesPerView={1}
+          grabCursor={true}
+          pagination={{ clickable: true, dynamicBullets: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
+        >
+          {projects.map(
+            ({ name, techs, description, src, colorClass }, idx) => (
+              <SwiperSlide key={name}>
+                <Content
+                  idx={idx}
+                  name={name}
+                  techs={techs}
+                  description={description}
+                  src={src}
+                  textColor={colorVariants[colorClass].selected}
+                />
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
       </div>
     </section>
   );
