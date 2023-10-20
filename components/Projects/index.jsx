@@ -10,8 +10,11 @@ import 'swiper/css/pagination';
 
 import { Content } from './Content';
 import { colorVariants, projects } from '@/constants';
+import { useThemeContext } from '@/hooks/useThemeContext';
 
 export const Projects = () => {
+  const { setSelectedProject } = useThemeContext();
+
   return (
     <section className="flex justify-center items-center">
       <div className="w-[80vw] md:w-1/2">
@@ -24,8 +27,7 @@ export const Projects = () => {
           slidesPerView={1}
           grabCursor={true}
           pagination={{ clickable: true, dynamicBullets: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
+          onSlideChange={(swiper) => setSelectedProject(swiper.activeIndex)}
         >
           {projects.map(
             ({ name, techs, description, src, colorClass }, idx) => (
