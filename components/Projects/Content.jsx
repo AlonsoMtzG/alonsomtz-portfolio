@@ -26,6 +26,7 @@ export const Content = ({ idx, name, techs, description, src, textColor }) => {
       </div>
       <Image
         src={src}
+        alt={name}
         width={1920}
         height={1080}
         className="w-full rounded-2xl"
