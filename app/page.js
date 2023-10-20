@@ -1,19 +1,17 @@
-import { Building } from "@/components/Building";
+import { Projects } from "@/components/Projects";
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="font-satoshi">
-      {/* <Header />
-      <Divider />
+    <main className="font-clashDisplay px-7 md:px-14 relative overflow-hidden">
+      <Header />
       <About />
-      <Divider />
       <Projects />
-      <Divider />
-      <Footer /> */}
-      {/* Delete when ending build  */}
-      <div className="h-[100dvh] flex justify-center items-center bg-[url('/1.png')] bg-cover">
-        <Building />
-      </div>
+      <Contact />
+      <Footer />
     </main>
   );
 }

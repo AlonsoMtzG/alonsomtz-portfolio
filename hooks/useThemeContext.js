@@ -13,6 +13,8 @@ export const useThemeContext = () => {
     colorVariants[projects[selectedProject].colorClass].unselected;
   const bgColor =
     colorVariants[projects[selectedProject].colorClass].background;
+  const bgHover =
+    colorVariants[projects[selectedProject].colorClass].backgroundhover;
 
   return {
     selectedProject,
@@ -20,5 +22,6 @@ export const useThemeContext = () => {
     textColorSelected,
     textColorUnSelected,
     bgColor,
+    bgHover,
   };
 };

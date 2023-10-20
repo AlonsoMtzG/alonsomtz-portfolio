@@ -1,34 +1,50 @@
 'use client';
 import React from 'react';
+// import Swiper core and required modules
+import { Pagination, Keyboard } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import { projects } from '@/constants';
-
-import { Names } from './Names';
 import { Content } from './Content';
+import { colorVariants, projects } from '@/constants';
 import { useThemeContext } from '@/hooks/useThemeContext';
 
 export const Projects = () => {
-  const {
-    selectedProject,
-    setSelectedProject,
-    textColorSelected,
-    textColorUnSelected,
-  } = useThemeContext();
+  const { setSelectedProject } = useThemeContext();
 
   return (
-    <div className="py-14 px-10 flex">
-      <div className="flex flex-[0.8] flex-col gap-3">
-        <Names
-          projects={projects}
-          selectedProject={selectedProject}
-          setSelectedProject={setSelectedProject}
-          textColorSelected={textColorSelected}
-          textColorUnSelected={textColorUnSelected}
-        />
+    <section className="flex justify-center items-center">
+      <div className="w-[80vw] md:w-1/2">
+        <Swiper
+          modules={[Pagination, Keyboard]}
+          keyboard={{
+            enabled: true,
+          }}
+          spaceBetween={30}
+          slidesPerView={1}
+          grabCursor={true}
+          pagination={{ clickable: true, dynamicBullets: true }}
+          onSlideChange={(swiper) => setSelectedProject(swiper.activeIndex)}
+        >
+          {projects.map(
+            ({ name, techs, description, src, colorClass }, idx) => (
+              <SwiperSlide key={name}>
+                <Content
+                  idx={idx}
+                  name={name}
+                  techs={techs}
+                  description={description}
+                  src={src}
+                  textColor={colorVariants[colorClass].selected}
+                />
+              </SwiperSlide>
+            )
+          )}
+        </Swiper>
       </div>
-      <div className="flex flex-1 flex-col gap-3">
-        <Content project={projects[selectedProject]} />
-      </div>
-    </div>
+    </section>
   );
 };
