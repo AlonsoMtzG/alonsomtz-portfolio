@@ -11,7 +11,7 @@ export const Projects = ({ divRef }) => {
   const { selectedProject } = useThemeContext();
 
   return (
-    <div className="flex pr-36">
+    <div className="flex">
       <div className="flex flex-1 mr-10">
         <Image
           priority={true}
