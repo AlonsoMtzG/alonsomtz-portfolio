@@ -2,7 +2,11 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
+import { useThemeContext } from '@/hooks/useThemeContext';
+
 export const About = ({ divRef }) => {
+  const { textColorSelected } = useThemeContext();
+
   return (
     <section className="h-[88.5dvh] flex items-center justify-center">
       <div
@@ -15,7 +19,9 @@ export const About = ({ divRef }) => {
         </h3>
         <div className="font-thin flex gap-1 text-zinc-400 text-xl">
           passionate about{' '}
-          <span className="font-medium text-blue-600 transition-all duration-300">
+          <span
+            className={`font-medium ${textColorSelected} transition-all duration-300`}
+          >
             <Typewriter
               options={{
                 strings: [

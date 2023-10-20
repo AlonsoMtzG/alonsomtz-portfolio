@@ -5,36 +5,43 @@ export const colorVariants = {
     selected: "text-indigo-600",
     unselected: "group-hover:text-indigo-600",
     background: "bg-indigo-600",
+    backgroundhover: "hover:bg-indigo-700",
   },
   enigma: {
     selected: "text-rose-600",
     unselected: "group-hover:text-rose-600",
     background: "bg-rose-600",
+    backgroundhover: "hover:bg-rose-700",
   },
   studya: {
-    selected: "text-sky-900",
-    unselected: "group-hover:text-sky-900",
-    background: "bg-sky-900",
+    selected: "text-sky-800",
+    unselected: "group-hover:text-sky-800",
+    background: "bg-sky-800",
+    backgroundhover: "hover:bg-sky-900",
   },
   hitec: {
     selected: "text-sky-600",
     unselected: "group-hover:text-sky-600",
     background: "bg-sky-600",
+    backgroundhover: "hover:bg-sky-700",
   },
   bamx: {
     selected: "text-rose-600",
     unselected: "group-hover:text-rose-600",
     background: "bg-rose-600",
+    backgroundhover: "hover:bg-rose-700",
   },
   feedback: {
     selected: "text-violet-500",
     unselected: "group-hover:text-violet-500",
     background: "bg-violet-500",
+    backgroundhover: "hover:bg-violet-600",
   },
   lert: {
     selected: "text-blue-600",
     unselected: "group-hover:text-blue-600",
     background: "bg-blue-600",
+    backgroundhover: "hover:bg-blue-700",
   },
 };
 

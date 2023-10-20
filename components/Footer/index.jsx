@@ -1,15 +1,21 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
+
+import { useThemeContext } from '@/hooks/useThemeContext';
 
 import { TwitterIcon } from './TwitterIcon';
 import { LinkedinIcon } from './LinkedinIcon';
 import { GithubIcon } from './GithubIcon';
 
 export const Footer = () => {
+  const { textColorSelected } = useThemeContext();
   return (
     <footer className="px-10 py-14 flex justify-between">
       <div className="flex gap-1">
-        <span className="text-blue-600 font-semibold transition-all duration-300">
+        <span
+          className={`${textColorSelected} font-semibold transition-all duration-300`}
+        >
           Email me:
         </span>
         <Link href="mailto: luisalonsomtzg@gmail.com" className="font-light">
