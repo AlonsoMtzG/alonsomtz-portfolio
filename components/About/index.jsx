@@ -17,7 +17,7 @@ export const About = ({ divRef }) => {
         <h3 className="font-thin text-zinc-400 md:text-xl">
           Full Stack Development | UI/UX Design
         </h3>
-        <p
+        <div
           className={`font-normal md:text-xl ${textColorSelected} transition-all duration-300 flex-wrap`}
         >
           <Typewriter
@@ -31,7 +31,7 @@ export const About = ({ divRef }) => {
               loop: true,
             }}
           />
-        </p>
+        </div>
       </div>
     </section>
   );
