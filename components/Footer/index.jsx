@@ -11,8 +11,8 @@ import { GithubIcon } from './GithubIcon';
 export const Footer = () => {
   const { textColorSelected } = useThemeContext();
   return (
-    <footer className="px-10 py-14 flex justify-between">
-      <div className="flex gap-1">
+    <footer className="gap-y-3 flex flex-col pb-12 md:flex-row justify-between">
+      <p className="flex gap-1 text-sm tracking-wider md:text-base">
         <span
           className={`${textColorSelected} font-semibold transition-all duration-300`}
         >
@@ -21,7 +21,7 @@ export const Footer = () => {
         <Link href="mailto: luisalonsomtzg@gmail.com" className="font-light">
           luisalonsomtzg@gmail.com
         </Link>
-      </div>
+      </p>
       <div className="flex gap-2">
         <Link
           target="_blank"
