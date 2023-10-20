@@ -9,7 +9,7 @@ export const Contact = () => {
       <form className="w-1/2">
         <div className="mb-6">
           <label
-            for="full_name"
+            htmlFor="full_name"
             className="block mb-2 text-base font-medium text-white"
           >
             What's your name?
@@ -24,7 +24,7 @@ export const Contact = () => {
         </div>
         <div className="mb-6">
           <label
-            for="email"
+            htmlFor="email"
             className="block mb-2 text-base font-medium text-gray-900 dark:text-white"
           >
             Type your email
@@ -39,7 +39,7 @@ export const Contact = () => {
         </div>
         <div className="mb-6">
           <label
-            for="message"
+            htmlFor="message"
             className="block mb-2 text-base font-medium text-white"
           >
             Your message
