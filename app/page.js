@@ -67,31 +67,47 @@ export default function Home() {
   return (
     <main className="font-satoshi px-14 h-screen relative">
       <div
+        className="rounded-xl bg-zinc-900"
         style={{
           position: "fixed",
-          top: "10vh",
+          top: "11vh",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
           right: "3.5rem",
-          width: "4rem",
+          width: "4.5rem",
           height: "80vh",
-          background: "white",
           zIndex: 1000,
         }}
       >
         <div
+          className="absolute flex"
+          style={{
+            width: "80vh",
+            display: "flex",
+            justifyContent: "center",
+            transform: "rotate(90deg)",
+          }}
+        >
+          <span className="text-white text-2xl tracking-widest">
+            Hey there!
+          </span>
+        </div>
+        <div
           style={{
             position: "absolute",
             top: `${indicatorTop}vh`,
-            left: isAnimating ? "0px" : "-30px",
+            left: isAnimating ? "0px" : "-35px",
             transition: "left 0.3s ease-in-out",
           }}
         >
           <svg
-            width="50"
-            height="50"
+            width="60"
+            height="60"
             viewBox="0 0 15 15"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M9 4L9 11L4.5 7.5L9 4Z" fill="white"></path>
+            <path d="M9 4L9 11L4.5 7.5L9 4Z" fill="#18181b"></path>
           </svg>
         </div>
       </div>
