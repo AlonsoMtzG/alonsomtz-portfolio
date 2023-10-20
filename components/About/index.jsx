@@ -13,28 +13,25 @@ export const About = ({ divRef }) => {
         className="mb-12 gap-1 flex-col w-full flex items-center justify-center"
         ref={divRef}
       >
-        <h1 className="font-medium text-5xl">Software Engineer</h1>
-        <h3 className="font-thin text-zinc-400 text-xl">
+        <h1 className="font-medium text-3xl md:text-5xl">Software Engineer</h1>
+        <h3 className="font-thin text-zinc-400 md:text-xl">
           Full Stack Development | UI/UX Design
         </h3>
-        <div className="font-thin flex gap-1 text-zinc-400 text-xl">
-          passionate about{' '}
-          <span
-            className={`font-medium ${textColorSelected} transition-all duration-300`}
-          >
-            <Typewriter
-              options={{
-                strings: [
-                  'crafting memorable user experiences.',
-                  'merging code and creativity.',
-                  'building digital ecosystems.',
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </span>
-        </div>
+        <p
+          className={`font-normal md:text-xl ${textColorSelected} transition-all duration-300 flex-wrap`}
+        >
+          <Typewriter
+            options={{
+              strings: [
+                'Crafting memorable user experiences.',
+                'Merging code and creativity.',
+                'Building digital ecosystems.',
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </p>
       </div>
     </section>
   );
