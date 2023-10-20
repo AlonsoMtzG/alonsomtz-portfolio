@@ -15,7 +15,7 @@ export const About = ({ divRef }) => {
         </h3>
         <div className="font-thin flex gap-1 text-zinc-400 text-xl">
           passionate about{' '}
-          <span className="font-medium transition-all duration-300">
+          <span className="font-medium text-blue-600 transition-all duration-300">
             <Typewriter
               options={{
                 strings: [
