@@ -8,7 +8,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      satoshi: ["ClashDisplay", "sans-serif"],
+      clashDisplay: ["ClashDisplay", "sans-serif"],
     },
     extend: {
       backgroundImage: {

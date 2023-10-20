@@ -6,7 +6,7 @@ import { Contact } from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="font-satoshi px-14 h-screen relative">
+    <main className="font-clashDisplay px-14 h-screen relative">
       <Header />
       <About />
       <Projects />
