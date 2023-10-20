@@ -11,7 +11,7 @@ export const Projects = ({ divRef }) => {
   const { selectedProject } = useThemeContext();
 
   return (
-    <div className="flex">
+    <section className="flex">
       <div className="flex flex-1 mr-10">
         <Image
           priority={true}
@@ -49,6 +49,6 @@ export const Projects = ({ divRef }) => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

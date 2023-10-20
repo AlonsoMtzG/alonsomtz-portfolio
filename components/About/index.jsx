@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 export const About = ({ divRef }) => {
   return (
-    <div className="h-[88.5dvh] flex items-center">
+    <section className="h-[88.5dvh] flex items-center">
       <div className="mb-12 gap-1 flex flex-col justify-center" ref={divRef}>
         <h1 className="font-medium text-6xl">Software Engineer</h1>
         <h3 className="font-thin text-zinc-400 text-2xl">
@@ -27,6 +27,6 @@ export const About = ({ divRef }) => {
           </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

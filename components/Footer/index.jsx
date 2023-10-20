@@ -12,7 +12,7 @@ export const Footer = () => {
   const { textColorSelected } = useThemeContext();
 
   return (
-    <div className="px-10 py-14 flex justify-between">
+    <footer className="px-10 py-14 flex justify-between">
       <div className="flex gap-1">
         <span
           className={`font-bold ${textColorSelected} transition-all duration-300`}
@@ -46,6 +46,6 @@ export const Footer = () => {
           <GithubIcon size={22} />
         </Link>
       </div>
-    </div>
+    </footer>
   );
 };
