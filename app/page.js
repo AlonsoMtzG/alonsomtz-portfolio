@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import Typewriter from "typewriter-effect";
+
 import { Projects } from "@/components/Projects";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
@@ -64,6 +66,11 @@ export default function Home() {
     };
   }, [currentSection]);
 
+  const strings = [
+    ["Hey there!", "Nice to meet you!"],
+    ["Cool, Right?", "Move to the next!", "You can have one like this!"],
+  ];
+
   return (
     <main className="font-satoshi px-14 h-screen relative">
       <div
@@ -91,7 +98,13 @@ export default function Home() {
           }}
         >
           <span className="text-white text-2xl tracking-widest">
-            Hey there!
+            <Typewriter
+              options={{
+                strings: strings[currentSection],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </span>
         </div>
         <div
