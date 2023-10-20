@@ -98,14 +98,14 @@ export default function Home() {
           style={{
             position: "absolute",
             top: `${indicatorTop}vh`,
-            left: isAnimating ? "0px" : "-35px",
+            left: isAnimating ? "0px" : "-48px",
             transition: "left 0.3s ease-in-out",
             zIndex: 999,
           }}
         >
           <svg
-            width="60"
-            height="60"
+            width="80"
+            height="80"
             viewBox="0 0 15 15"
             xmlns="http://www.w3.org/2000/svg"
           >
