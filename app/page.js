@@ -20,7 +20,7 @@ export default function Home() {
       const bigElementBottom = window.innerHeight * 0.9;
 
       const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
+        window.scrollY || document.documentElement.scrollTop;
       const scrollingDown = currentScrollTop > lastScrollTop;
       lastScrollTop = currentScrollTop;
 
