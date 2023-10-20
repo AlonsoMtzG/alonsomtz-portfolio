@@ -1,25 +1,18 @@
 'use client';
 import React from 'react';
+import Image from 'next/image';
 
 import { projects } from '@/constants';
-
-import { Names } from './Names';
-import { Content } from './Content';
 import { useThemeContext } from '@/hooks/useThemeContext';
-import Image from 'next/image';
+
 import { TechsCircle } from './TechsCircle';
 
 export const Projects = ({ divRef }) => {
-  const {
-    selectedProject,
-    setSelectedProject,
-    textColorSelected,
-    textColorUnSelected,
-  } = useThemeContext();
+  const { selectedProject } = useThemeContext();
 
   return (
-    <div className="flex">
-      <div className="flex flex-1 flex-col gap-3">
+    <div className="flex pr-36">
+      <div className="flex flex-1 mr-10">
         <Image
           priority={true}
           width={1920}
