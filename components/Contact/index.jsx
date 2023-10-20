@@ -51,7 +51,7 @@ export const Contact = () => {
         <div className="w-full flex justify-end">
           <button
             type="submit"
-            className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-lg w-full sm:w-auto px-5 py-2.5 text-center bg-zinc-600 hover:bg-zinc-700 focus:ring-zinc-800"
+            className="text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-base w-full sm:w-auto px-3 py-1 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
           >
             Submit
           </button>
