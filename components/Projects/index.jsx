@@ -11,7 +11,7 @@ export const Projects = ({ divRef }) => {
   const { selectedProject } = useThemeContext();
 
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center py-24">
       <div className="flex-col items-center w-1/2">
         <div className="flex flex-1 flex-col gap-8 mb-10">
           <div className="flex flex-col text-center">
