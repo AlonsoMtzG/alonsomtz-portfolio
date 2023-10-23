@@ -25,6 +25,7 @@ export const Content = ({ idx, name, techs, description, src, textColor }) => {
         <p className="md:text-lg font-thin text-center">{description}</p>
       </div>
       <Image
+        priority
         src={src}
         alt={name}
         width={1920}
