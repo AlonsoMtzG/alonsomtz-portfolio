@@ -17,7 +17,6 @@ export const Contact = () => {
   };
 
   useEffect(() => {
-    console.log(state);
     if (state.succeeded) {
       setRenderSucceded(true);
       setTimeout(() => {
