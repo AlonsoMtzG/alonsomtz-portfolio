@@ -52,7 +52,7 @@ export const Contact = () => {
         <div className="mb-6">
           <label
             htmlFor="email"
-            className="block mb-2 text-sm md:text-base font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm md:text-base font-medium text-white"
           >
             Type your email
           </label>
