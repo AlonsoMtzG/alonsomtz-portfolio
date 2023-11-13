@@ -50,7 +50,7 @@ export const projects = [
     name: "Pixelu Studio",
     techs: ["Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Design"],
     description:
-      "Landing page of my digital design & software development studio.",
+      "Landing page of a digital design & software development studio.",
     src: `${projectsPath}/pixelu.gif`,
     colorClass: "pixelu",
   },
