@@ -62,6 +62,14 @@ export const projects = [
     colorClass: "enigma",
   },
   {
+    name: "Formula 1",
+    techs: ["Next.js", "Tailwind CSS", "UI/UX Design"],
+    description:
+      "App to know the drivers with the highest probability of winning the race of the selected circuit.",
+    src: `${projectsPath}/f1.gif`,
+    colorClass: "enigma",
+  },
+  {
     name: "Studya",
     techs: ["Figma", "UI/UX Design"],
     description: "Online platform to find and compare academic options.",
