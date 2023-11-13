@@ -50,7 +50,7 @@ export const projects = [
     name: "Pixelu Studio",
     techs: ["Next.js", "Tailwind CSS", "Framer Motion", "UI/UX Design"],
     description:
-      "Landing page of my digital design & software development studio.",
+      "Landing page of a digital design & software development studio.",
     src: `${projectsPath}/pixelu.gif`,
     colorClass: "pixelu",
   },
@@ -59,6 +59,14 @@ export const projects = [
     techs: ["Next.js", "Tailwind CSS", "Firebase", "Stripe", "UI/UX Design"],
     description: "E-commerce platform to purchase event tickets.",
     src: `${projectsPath}/enigma.gif`,
+    colorClass: "enigma",
+  },
+  {
+    name: "Formula 1",
+    techs: ["Next.js", "Tailwind CSS", "UI/UX Design"],
+    description:
+      "App to know the drivers with the highest probability of winning the race of the selected circuit.",
+    src: `${projectsPath}/f1.gif`,
     colorClass: "enigma",
   },
   {

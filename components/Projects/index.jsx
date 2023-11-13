@@ -11,6 +11,7 @@ import 'swiper/css/pagination';
 import { Content } from './Content';
 import { colorVariants, projects } from '@/constants';
 import { useThemeContext } from '@/hooks/useThemeContext';
+import { DoubleArrowLeft, DoubleArrowRight } from './SlideIcons';
 
 export const Projects = () => {
   const { setSelectedProject } = useThemeContext();
@@ -25,6 +26,7 @@ export const Projects = () => {
           }}
           spaceBetween={30}
           slidesPerView={1}
+          loop={true}
           grabCursor={true}
           pagination={{ clickable: true, dynamicBullets: true }}
           onSlideChange={(swiper) => setSelectedProject(swiper.activeIndex)}
@@ -44,6 +46,11 @@ export const Projects = () => {
             )
           )}
         </Swiper>
+        <div className="flex items-center justify-center mt-5 gap-2 text-zinc-500 ">
+          <DoubleArrowLeft />
+          <p>Slide to see more</p>
+          <DoubleArrowRight />
+        </div>
       </div>
     </section>
   );
